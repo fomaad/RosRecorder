@@ -74,7 +74,7 @@ class ImageRecorder(Node):
         height, width = self.frames[0].shape[:2]
         
         if self.output_filename:
-            output_path = os.path.join('recordings', self.output_filename)
+            output_path = self.output_filename
             if not output_path.endswith('.mp4'):
                 output_path += '.mp4'
         else:
